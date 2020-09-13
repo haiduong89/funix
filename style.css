@@ -1,0 +1,53 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*position: fixed;*/
+  background-color: white;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+li {
+  float: left;
+  background-color: white;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:nth-last-child(2) {
+  float: right;
+}
+
+li:nth-last-child(3) {
+  float: right;
+}
+
+li:nth-last-child(1) {
+  float: right;
+}
+/* Chang the link color to lightgray on hover*/
+li a:hover:not(.active) {
+  background-color: lightblue;
+}
+
+.active {
+  background-color: white;
+}
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  color: white;
+  top: 70px;
+  left: 40px;
+}
