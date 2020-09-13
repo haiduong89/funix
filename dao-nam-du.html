@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: rgba(0, 128, 0, 0.7);
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: rgba(0, 128, 0, 0.7);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: rgba(0, 128, 0, 0.9);
+}
+
+.aside {
+  background-color: rgba(0, 128, 0, 0.7);
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: rgba(0, 128, 0, 0.5);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Đi du lịch nào!</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="quan-dao-ba-lua.html">Quần Đảo Bà Lụa</a></li>
+      <li><a href="dao-binh-hung.html">Đảo Bình Hưng</a></li>
+      <li><a href="dao-nam-du.html">Đảo Nam Du</a></li>
+      <li><a href="cu-lao-cham.html">Cù Lao Chàm</a></li>
+      <li><a href="dao-binh-ba.html">Đảo Bình Ba</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>ĐẢO NAM DU</h1>
+    <p>Thuộc huyện Kiên Hải, tỉnh Kiên Giang, Nam Du được biết đến như một hòn đảo còn hoang sơ và chưa được khai thác du lịch triệt để như Phú Quốc. Tuy nhiên, chính những điều đó lại khiến Nam Du càng bí ẩn hơn. Đến đây, bạn có thể tắm ở bãi Cây Mến, bãi Ngự, tham quan Hải Đăng Nam Du, đi thuyền ra các hòn lân cận như hòn Mấu, hòn Ngang…</p>
+    <img src="images/dao-nam-du.jpeg" alt="Đảo Nam Du"/>
+    <p>Điểm đặc biệt ở Nam Du là giá cả dịch vụ du lịch cũng như khách sạn rất rẻ. Trước khi ra đây, tốt nhất bạn nên tìm hiểu và liên hệ với dân địa phương để họ chuẩn bị đón tiếp. Người dân ở Nam Du rất vui tính và hiếu khách, họ còn có ý thức bảo vệ môi trường rất cao. Đó là lý do vì sao Nam Du vẫn giữ được nét đẹp hoang sơ từ xưa đến nay.</p>
+    <img src="images/nam-du-2.jpeg" alt="Đảo Nam Du"/>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Ăn gì?</h2>
+      <p><a href="#">Khám phá những đặc sản ngon nhất miền biển.</a></p>
+      <h2>Ngủ ở đâu?</h2>
+      <p><a href="#">Ngủ trong những homestay bình dị của người bản địa.</a></p>
+      <h2>Chơi gì?</h2>
+      <p><a href="#">Bí mật nhé! Đi thì sẽ biết.</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Blog nhỏ du lịch của bạn Văn Hải Dương. Mọi người ủng hộ nhé!.</p>
+</div>
+
+</body>
+</html>
